@@ -21,3 +21,16 @@ function lacakPaket() {
 
     modal.show();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("#pesanReguler form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault(); 
+        alert("Pesanan berhasil dibuat!");
+        form.reset();
+        let modal = bootstrap.Modal.getInstance(
+            document.getElementById("pesanReguler")
+        );
+        modal.hide();
+    });
+});
