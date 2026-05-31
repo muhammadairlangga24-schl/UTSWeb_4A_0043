@@ -169,7 +169,6 @@
     </div>
 </section>
 
-
 <section id="layanan" class="py-5 bg-light">
     <div class="container">
 
@@ -182,23 +181,25 @@
 
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100">
-
+                <div class="card layanan-card border-0 shadow-sm h-100">
                     <img src="https://png.pngtree.com/png-vector/20230507/ourlarge/pngtree-fast-delivery-label-design-vector-png-image_7087605.png"
-                         class="card-img-top"
-                         style="height:150px; object-fit:cover;">
-                    <div class="card-body p-4">
-                        <h5 class="card-title">JekLog Express</h5>
-                        <p>
-                            jeklog expres Layanan pengiriman cepat 1–2 hari dalam kota dan 3–5 hari antar kota.
-                        </p>
-                        <span class="badge bg-light text-dark border">Cepat</span>
-                        <span class="badge bg-light text-dark border">Aman</span>
+                        class="card-img-top layanan-img">
 
-                        <div class="mt-3">
-                           <button class="btn btn-primary w-100"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#lihatDetail">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">JekLog Express</h5>
+
+                        <p class="text-secondary">
+                            Layanan pengiriman cepat 1–2 hari dalam kota dan
+                            3–5 hari antar kota.
+                        </p>
+
+                        <span class="badge bg-primary">Cepat</span>
+                        <span class="badge bg-success">Aman</span>
+
+                        <div class="mt-4">
+                            <button class="btn btn-primary w-100"
+                                data-bs-toggle="modal"
+                                data-bs-target="#lihatDetail">
                                 Lihat Detail
                             </button>
                         </div>
@@ -207,23 +208,25 @@
             </div>
 
             <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100">
-
+                <div class="card layanan-card border-0 shadow-sm h-100">
                     <img src="https://storage.googleapis.com/tprt0ezsggqjornc7nf1wwluvgulhr/EditorImage/MyySb/daftar%20jasa%20pengiriman%20barang%20murah.webp.webp"
-                         class="card-img-top"
-                         style="height:150px; object-fit:cover;">
-                    <div class="card-body p-4">
-                        <h5 class="card-title">Regular</h5>
-                        <p>
-                             hadir untuk Anda yang memerlukan layanan dengan kecepatan 2-10 hari pengiriman, tergantung pada jarak pengiriman. Kami akan menangani pengiriman Anda dengan aman sampai tujuan.
-                        </p>
-                        <span class="badge bg-light text-dark border">murah</span>
-                        <span class="badge bg-light text-dark border">Aman</span>
+                        class="card-img-top layanan-img">
 
-                        <div class="mt-3">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">Regular</h5>
+
+                        <p class="text-secondary">
+                            Pengiriman 2–10 hari sesuai jarak tujuan dengan
+                            harga lebih ekonomis dan tetap aman.
+                        </p>
+
+                        <span class="badge bg-warning text-dark">Murah</span>
+                        <span class="badge bg-success">Aman</span>
+
+                        <div class="mt-4">
                             <button class="btn btn-primary w-100"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#pesanReguler">
+                                data-bs-toggle="modal"
+                                data-bs-target="#pesanReguler">
                                 Pesan Sekarang
                             </button>
                         </div>
@@ -232,32 +235,34 @@
             </div>
             
              <div class="col-md-4">
-                <div class="card border-0 shadow-sm h-100">
-
+                <div class="card layanan-card border-0 shadow-sm h-100">
                     <img src="https://idexpress.com/_next/image?url=%2Fimages%2Fpage%2Fhome%2Flayanan%2Fidtruck.webp&w=1920&q=75"
-                         class="card-img-top"
-                         style="height:150px; object-fit:cover;">
-                    <div class="card-body p-4">
-                        <h5 class="card-title">Cargo</h5>
-                        <p>
-                             Layanan pengiriman terbaru dari iDexpress yang ditujukan bagi Anda yang memerlukan layanan pengiriman dengan berat di atas 10kg. Lebih hemat namun tetap aman sampai ke tujuan Anda.
-                        </p>
-                        <span class="badge bg-light text-dark border">besar</span>
-                        <span class="badge bg-light text-dark border">Aman</span>
+                        class="card-img-top layanan-img">
 
-                        <div class="mt-3">
+                    <div class="card-body p-4">
+                        <h5 class="fw-bold">Cargo</h5>
+
+                        <p class="text-secondary">
+                            Pengiriman barang berat di atas 10kg dengan biaya
+                            lebih hemat dan keamanan terjamin.
+                        </p>
+
+                        <span class="badge bg-info">Besar</span>
+                        <span class="badge bg-success">Aman</span>
+
+                        <div class="mt-4">
                             <button class="btn btn-primary w-100"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#lihatDetail">
+                                data-bs-toggle="modal"
+                                data-bs-target="#lihatDetail">
                                 Lihat Detail
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-    </div>
+        </div>
 
-    <div class="modal fade" id="lihatDetail" tabinex="-1">
+    <div class="modal fade" id="lihatDetail" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -273,7 +278,7 @@
         </div>
         </div>
     </div>
-    <div class="modal fade" id="pesanReguler" tabinex="-1">
+    <div class="modal fade" id="pesanReguler" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -281,32 +286,34 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">Nama Pengirim</label>
-                        <input type="text" id="namaPengirim" class="form-control" placeholder="Masukkan nama">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Alamat Pengirim</label>
-                        <input type="text" id="alamatPengirim" class="form-control" placeholder="Masukkan alamat">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Nama Penerima</label>
-                        <input type="text" id="namaPenerima" class="form-control" placeholder="Masukkan nama">
-                    </div>
-                    <div class="mb-3">
-                        <label class="form-label">Alamat Penerima</label>
-                        <input type="text" id="alamatPenerima" class="form-control" placeholder="Masukkan alamat">
-                    </div>
-                        <div class="mb-3">
-                            <label class="form-label">Berat Barang (kg)</label>
-                            <input type="number" class="form-control" placeholder="Masukkan berat">
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                        Kirim Pesanan
-                    </button>
-                </form>
-            </div>
+    <form id="formPesanan">
+        <div class="mb-3">
+            <label class="form-label">Nama Pengirim</label>
+            <input type="text" id="namaPengirim" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Alamat Pengirim</label>
+            <input type="text" id="alamatPengirim" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Nama Penerima</label>
+            <input type="text" id="namaPenerima" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Alamat Penerima</label>
+            <input type="text" id="alamatPenerima" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Berat Barang (kg)</label>
+            <input type="number" id="beratBarang" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">
+            Kirim Pesanan
+        </button>
+    </form>
+</div>
+        </div>
+        </div>
     </div>
 </section>       
 

@@ -171,3 +171,28 @@ body{
 #about{
     background:#f8fafc;
 }
+
+.layanan-card {
+    border-radius: 18px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.layanan-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+}
+
+.layanan-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.layanan-card .badge {
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.layanan-card .btn {
+    border-radius: 10px;
+}
