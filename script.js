@@ -44,9 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
         kurirForm.addEventListener("submit", function (e) {
             e.preventDefault();
 
-            const nama = kurirForm.querySelector(
-                'input[placeholder="Masukkan nama lengkap"]'
-            ).value;
+            const nama = document.getElementById("namaKurir").value.trim();
+            const telepon = document.getElementById("teleponKurir").value.trim();
+            const alamat = document.getElementById("alamatKurir").value.trim();
+
+            if (nama === "" || telepon === "" || alamat === "") {
+                alert("Semua data wajib diisi!");
+                return;
+            }
 
             const container = document.getElementById("kurirContainer");
 
