@@ -25,14 +25,32 @@ function lacakPaket() {
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#pesanReguler form");
     form.addEventListener("submit", function (e) {
-        e.preventDefault(); 
-        alert("Pesanan berhasil dibuat!");
-        form.reset();
-        let modal = bootstrap.Modal.getInstance(
-            document.getElementById("pesanReguler")
-        );
-        modal.hide();
-    });
+    e.preventDefault();
+
+    const namaPengirim = document.getElementById("namaPengirim").value.trim();
+    const alamatPengirim = document.getElementById("alamatPengirim").value.trim();
+    const namaPenerima = document.getElementById("namaPenerima").value.trim();
+    const alamatPenerima = document.getElementById("alamatPenerima").value.trim();
+    const beratBarang = document.getElementById("beratBarang").value.trim();
+
+    if (
+        namaPengirim === "" ||
+        alamatPengirim === "" ||
+        namaPenerima === "" ||
+        alamatPenerima === "" ||
+        beratBarang === ""
+    ) {
+        alert("Semua data pesanan wajib diisi!");
+        return;
+    }
+
+    alert("Pesanan berhasil dibuat!");
+    form.reset();
+
+    bootstrap.Modal.getInstance(
+        document.getElementById("pesanReguler")
+    ).hide();
+});
 });
 
 document.addEventListener("DOMContentLoaded", function () {
