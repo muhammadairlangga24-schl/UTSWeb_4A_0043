@@ -5,3 +5,17 @@ body{
 #hero{
     background-color: #f8fafc;
 }
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: transparent;
+}
+
+.btn-warning {
+    background-color: #ff5722;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e64a19;
+}
