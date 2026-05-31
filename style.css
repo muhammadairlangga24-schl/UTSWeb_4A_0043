@@ -196,3 +196,96 @@ body{
 .layanan-card .btn {
     border-radius: 10px;
 }
+#contact {
+    background: #f8fafc;
+}
+
+/* Card Styling */
+#contact .card {
+    border-radius: 20px;
+    transition: 0.3s ease;
+    background: white;
+}
+
+#contact .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Title */
+#contact h2 {
+    font-size: 42px;
+    color: #111827;
+}
+
+#contact h4 {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* Description */
+#contact p {
+    line-height: 1.7;
+}
+
+/* Form Input */
+#contact .form-control,
+#contact .form-select {
+    border-radius: 12px;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    transition: 0.3s ease;
+    box-shadow: none;
+}
+
+/* Focus Effect */
+#contact .form-control:focus,
+#contact .form-select:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+/* Label */
+#contact .form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+/* Button */
+#contact .btn-primary {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+/* Button Hover */
+#contact .btn-primary:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+}
+
+/* Contact Info */
+#contact h6 {
+    font-weight: 700;
+    color: #111827;
+}
+
+/* Divider */
+#contact hr {
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    #contact .card {
+        padding: 25px !important;
+    }
+}
